@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Completed Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main class="project-portfolio">
+
+    <!-- Навигация по проектам -->
+    <nav class="project-navigation" aria-label="Project selection">
+        <button class="nav-item active" data-index="0" aria-current="page">
+            Rostov-on-Don, Admiral
+        </button>
+        <button class="nav-item" data-index="1">
+            Sochi Thieves
+        </button>
+        <button class="nav-item" data-index="2">
+            Rostov-on-Don Patriotic
+        </button>
+    </nav>
+
+    <!-- Контент слайдера -->
+    <article class="slider-wrapper">
+
+        <!-- Информационная панель -->
+        <section class="project-details">
+            <header>
+                <h2 class="project-title">
+                    Completed<br>Projects
+                </h2>
+            </header>
+
+            <p class="project-description">
+                Only a small part of the work performed by our company is presented on the site.
+                For 14 years on in the construction market we have made happy more than 1000 families
+            </p>
+
+            <dl class="project-specs" aria-label="Project specifications">
+                <div class="spec-item">
+                    <dt class="spec-label">City:</dt>
+                    <dd class="spec-value" id="city" aria-live="polite"></dd>
+                </div>
+                <div class="spec-item">
+                    <dt class="spec-label">Apartment area:</dt>
+                    <dd class="spec-value" id="area" aria-live="polite"></dd>
+                </div>
+                <div class="spec-item">
+                    <dt class="spec-label">Repair time:</dt>
+                    <dd class="spec-value" id="time" aria-live="polite"></dd>
+                </div>
+                <div class="spec-item">
+                    <dt class="spec-label">Repair cost:</dt>
+                    <dd class="spec-value" id="cost" aria-live="polite"></dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- Изображение проекта -->
+        <figure class="project-visual">
+            <img id="slide-image" src="assets/images/slide-1.jpg" alt="Current project visualization">
+        </figure>
+
+    </article>
+
+    <!-- Панель управления -->
+    <footer class="slider-controls" aria-label="Slider navigation">
+        <button class="nav-button prev-button" aria-label="Previous project">
+            <img src="assets/icons/arrow-right.svg" alt="" role="presentation">
+        </button>
+
+        <div class="slider-indicators" role="tablist">
+            <span class="indicator active" data-index="0" role="tab" aria-label="Show project 1"></span>
+            <span class="indicator" data-index="1" role="tab" aria-label="Show project 2"></span>
+            <span class="indicator" data-index="2" role="tab" aria-label="Show project 3"></span>
+        </div>
+
+        <button class="nav-button next-button" aria-label="Next project">
+            <img src="assets/icons/arrow-right.svg" alt="" role="presentation">
+        </button>
+    </footer>
+
+</main>
+
+<script src="js/slider.js"></script>
+</body>
+</html>
